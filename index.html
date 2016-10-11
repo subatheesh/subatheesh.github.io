@@ -3,18 +3,33 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
-        <meta name="description" content="">
+        <title>Subatheesh R | Online Portfolio</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="shortcut icon" href="img/sw.ico" type="image/x-icon">
         <!-- Place favicon.ico in the root directory -->
         <script src="js/vendor/jquery-1.12.0.min.js"></script>
         <!-- <link rel="stylesheet" href="css/normalize.css"> -->
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <!-- <script src="js/vendor/modernizr-2.8.3.min.js"></script> -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js" integrity="sha384-ux8v3A6CPtOTqOzMKiuo3d/DomGaaClxFYdCu2HPMBEkf6x2xiDyJ7gkXU0MWwaD" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css/main.css">
+        <script>
+          $(document).ready(function(){
+            $("interest").hide();
+            $(".w").show();
+            var i=0;
+            window.setInterval(function(){
+              var j=i%2;
+              $("interest").hide();
+              if(j){
+                $(".f").show();i++;
+              }else{
+                $(".w").show();i++;
+              }
+            },1000);
+          });
+        </script>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -23,26 +38,19 @@
 
         <!-- Add your site or application content here -->
         <nav>
-          <leftlink>Work</leftlink>
-          <rightlink>About</rightlink>
+          <a href="work/"><leftlink>Work</leftlink></a>
+          <a href="about/"><rightlink>About</rightlink></a>
         </nav>
         <home-content>
           <content>
             <hi>Hi there, I am</hi>
-            <name>SUBATHEESH</name>
-            <interest>FRONT END DEVELOPER</interest>
-            <interest>WEB DEVELOPER </interest>
+            <name>SUBATHEESH R</name>
+            <interest class="f">FRONT END DEVELOPER</interest>
+            <interest class="w">WEB DEVELOPER </interest>
           </content>
         </home-content>
-
-        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
-        <!-- <script src="js/plugins.js"></script> -->
-        <!-- <script src="js/main.js"></script> -->
-
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script async>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
             e=o.createElement(i);r=o.getElementsByTagName(i)[0];
