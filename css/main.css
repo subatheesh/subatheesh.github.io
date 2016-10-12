@@ -209,12 +209,13 @@ a:hover{
   html{
     font-size: 0.4em;
   }
+  nav{font-size: 1.8em;}
   home-content{
     padding: 0;
   }
   leftlink,rightlink{
-    min-height: 30px;
-    min-width: 30px;
+    min-height: 36px;
+    min-width: 36px;
     width:80px;
   }
   .myimg{width: 70%;margin-left: 15%;}
@@ -224,12 +225,13 @@ a:hover{
   html{
     font-size: 0.6em;
   }
+  nav{ font-size: 1.4em;}
   home-content{
     padding: 0;
   }
   leftlink,rightlink{
-    min-height: 40px;
-    min-width: 40px;
+    min-height: 44px;
+    min-width: 44px;
     width:100px;
   }
   .myimg{width: 60%;margin-left: 20%;}
