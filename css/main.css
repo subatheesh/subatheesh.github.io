@@ -167,25 +167,27 @@ interest{
 }
 .about-content{
     width: 100vw;
-    display: flex;
+    display: block;
 }
 .myimg{
   box-sizing: border-box;
+  float: left;
   width: 50%;
 }
 .about-me{
-  font-size: 20px;
+  float: right;
+  font-size: 1.25em;
   font-weight: bold;
   box-sizing: border-box;
   width: 50%;
   color: #ed145b;
   padding: 50px;
 }
-.resume:hover{
+a:hover{
   text-decoration: none;
 }
 .resume{
-    font-size: 20px;
+    /*font-size: 20px;*/
     margin: 0 auto;
     color: #fff;
     background-color: #ed145b;
@@ -193,6 +195,15 @@ interest{
     padding: 10px;
     width: 200px;
     text-align: center;
+}
+.social a{
+  color: #333;
+}
+.social a:visited{
+  color: #333;
+}
+.social a:hover{
+  color: #000;
 }
 @media only screen and (max-width:420px) {
   html{
@@ -206,6 +217,8 @@ interest{
     min-width: 30px;
     width:80px;
   }
+  .myimg{width: 70%;margin-left: 15%;}
+  .about-me{width: 100%;font-size: 2em;}
 }
 @media only screen and (min-width:421px) and (max-width:600px) {
   html{
@@ -219,6 +232,8 @@ interest{
     min-width: 40px;
     width:100px;
   }
+  .myimg{width: 60%;margin-left: 20%;}
+  .about-me{width: 100%;font-size: 1.8em;}
 }
 @media only screen and (min-width:601px) and (max-width:1000px) {
   html{
