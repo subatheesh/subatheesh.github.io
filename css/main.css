@@ -165,6 +165,31 @@ name{
 interest{
   font-size: 3em;display: block;
 }
+.about-content{
+    width: 100vw;
+    display: flex;
+}
+.myimg{
+  box-sizing: border-box;
+  width: 50%;
+}
+.about-me{
+  font-size: 20px;
+  box-sizing: border-box;
+  width: 50%;
+  color: #ed145b;
+  padding: 50px;
+}
+.resume{
+    font-size: 20px;
+    margin: 0 auto;
+    color: #fff;
+    background-color: #ed145b;
+    border: 2px solid #fff;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+}
 @media only screen and (max-width:420px) {
   html{
     font-size: 0.4em;
